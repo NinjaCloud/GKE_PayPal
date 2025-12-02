@@ -136,7 +136,7 @@ kubectl apply -f app.yaml -n demo
 ### 5.6 Generating YAML from imperative
 
 ```
-kubectl create deployment myapp --image=nginx --dry-run=client -o yaml
+kubectl run myapp --image=nginx --dry-run=client -o yaml
 ```
 
 **End of Lab**
