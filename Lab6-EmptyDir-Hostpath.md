@@ -79,7 +79,6 @@ spec:
     volumeMounts:
     - name: cache-storage
       mountPath: /usr/share/nginx/html
-  nodeName: <NodeName>
 ```
 
 Apply:
@@ -213,6 +212,7 @@ spec:
     volumeMounts:
     - name: host-storage
       mountPath: /usr/share/nginx/html
+  nodeName: <PasteNodeNamehere> 
 ```
 
 Apply:
