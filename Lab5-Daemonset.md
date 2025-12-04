@@ -169,13 +169,13 @@ Explain key points:
 Expose one of the node-exporter pods (temporarily):
 
 ```bash
-kubectl port-forward pod/<POD_NAME> 9100:9100
+kubectl expose pod <NameOfPod> --type LoadBalancer --port 9100 --target-port 9100
 ```
 
 Open in browser:
 
 ```
-http://localhost:9100/metrics
+http://<ExternanIPAddress>:9100
 ```
 
 You will see raw node-level metrics like:
