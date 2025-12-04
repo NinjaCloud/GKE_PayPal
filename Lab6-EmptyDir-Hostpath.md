@@ -79,6 +79,7 @@ spec:
     volumeMounts:
     - name: cache-storage
       mountPath: /usr/share/nginx/html
+  nodeName: <NodeName>
 ```
 
 Apply:
